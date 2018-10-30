@@ -1,0 +1,308 @@
+/* 
+    Styles for Claire Valant's Project 1
+    Due Oct 31, 2018
+
+    1. General styles
+    2. Header
+    3. About Summit
+    4. Blog
+    5. Site map
+    6. About me
+    7. Gallery
+    8. Stay Updated
+    9. Footer
+    10. Media Queries
+*/
+
+
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+
+/* 1. General styles  */
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: #0f0f0f;
+}
+
+.logo,
+h2 {
+    font-size: 4.2rem;
+    margin: 0;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: #8dd7e9;
+    padding: 15px 20px;
+    border: none;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+.logo,
+.siteMap span,
+button,
+header li,
+header .wrapper nav {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+h3,
+h1 {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+h1 span {
+    font-size: 13rem;
+    display: block;
+}
+
+h4 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.mainTitles,
+footer p{
+    display: block; 
+    text-align: center;
+}
+
+header,
+.siteMap a,
+#stayUpdated,
+footer {
+    color: #f6f6f6;
+}
+
+/* 2. Header */
+
+header {
+    min-height: 100vh;
+    background: url('./assets/image-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .wrapper {
+    max-width: 80vw;
+    height: 93vh;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.mainTitles span {
+    margin: 0 auto;
+}
+
+.mainTitles {
+    display: block;
+    width: 45vw;
+    margin: 15vh auto 0 auto;
+}
+
+header .wrapper nav {
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav {
+    float: right;
+}
+
+.social {
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    top: -20vh;
+    right: 40px;
+}
+
+.social a {
+    color: #094154;
+}
+
+.social li {
+    margin: 10px 0;
+}
+
+/* 3. About Summit */
+
+#aboutSummit .wrapper {
+    width: 50vw;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* 4. Blog */
+
+#blog {
+    background: #f6f6f6;
+}
+
+.quad img {
+    max-width: 50%;
+    display: block;
+}
+
+.picCaption {
+    margin: 100px;
+    text-align: center;
+    width: 20%;
+}
+
+.quadTop img,
+.quadTop .picCaption {
+    float: left;
+}
+
+.quadBottom img,
+.quadBottom .picCaption {
+    float: right;
+}
+
+
+/* 5. Site map */
+
+.siteMap {
+    font-size: 3rem;
+    background: #215a6d;
+    overflow: hidden;
+    text-align: center;
+}
+
+.siteMap nav {
+    margin: 100px auto;
+}
+
+.siteMap li {
+    display: inline-block;
+}
+
+.siteMap i {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.siteMap li:nth-of-type(2) {
+    margin: 0 7%;
+}
+
+/* 6. About me */
+
+#aboutMe {
+    background: #f6f6f6;
+    overflow: hidden;
+}
+
+#aboutMe .wrapper {
+    width: 80vw;
+    margin: 100px auto;
+}
+
+#aboutMe img {
+    width: 320px;
+    margin-right: 3.7rem;
+    float: left;
+}
+
+.aboutMeInfo {
+    max-width: calc(100% - 320px - 3.7rem);
+    display: inline-block;
+}
+
+/* 7. Gallery */
+
+#gallery {
+    text-align: center;
+}
+
+#gallery img {
+    max-height: 400px;
+    margin: 100px 0;
+}
+
+#gallery img:nth-child(2) {
+    margin: 100px 40px;
+}
+
+/* 8. Stay Updated */
+
+#stayUpdated {
+    background: #215a6d;
+}
+
+/* 9. Footer */
+
+footer {
+    width: 100%;
+    background: #094154;
+    height: 45px;
+}
+
+/* 10. Media Queries */
+
+
+
+/* @media(min-width:1280) {
+    h1 {
+        font-size: 10.3rem;
+    }
+
+    h2 {
+        font-size: 
+    }
+} */
