@@ -1,3 +1,6 @@
+<!-- Claire Valant Project One
+    Due 10am October 31 2018 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +20,7 @@
         <div class="wrapper clearfix">
             <span class="logo">Summit</span>
 
+            <i class="fas fa-bars"></i>
             <nav>
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
@@ -27,7 +31,7 @@
             </nav>
 
             <div class="mainTitles">
-                <h1>Welcome to<span>Summit</span></h1>
+                <h1> <span>Welcome to</span> Summit</h1>
             </div>
         </div>
 
@@ -62,14 +66,13 @@
     </header>
 
     <main>
-
         <section id="aboutSummit">
             <div class="wrapper">
                 <h2>About Summit</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto et harum incidunt inventore eum,
-                    alias a dignissimos! Nisi, odit! Repellat minima id nihil quidem debitis hic laboriosam molestias
-                    impedit et.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
+                consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt
+                sem, a blandit sem.</p>
 
                 <button>Find out more</button>
             </div>
@@ -78,120 +81,129 @@
 
         <section id="blog">
             <div class="quad quadTop clearfix">
-                <img src="./assets/image-2@3x.jpg" alt="Mount Fuji on a clear day with blurred cherry blossoms in the foreground">
+                <div class="blogPic"></div>
 
-                <div class="picCaption">
-                    <h3>Peak photos</h3>
+                <div class="halfBlog">
+                    <div class="picCaption">
+                        <h3>Peak photos</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum.</p>
 
-                    <button>Read more</button>
+                        <button>Read more</button>
+                    </div>
                 </div>
 
             </div>
 
             <div class="quad quadBottom clearfix">
-                <img src="./assets/image-3@3x.jpg" alt="the right wing of an airplane viewed from the window of a plane flying high over mountains">
+                <div class="blogPic"></div>
                 
-                <div class="picCaption">
-                    <h3>Packing essentials</h3>
+                <div class="halfBlog">
+                    <div class="picCaption">
+                        <h3>Packing essentials</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum.</p>
 
-                    <button>Read more</button>
+                        <button>Read more</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-    </main>
+        <section class="siteMap">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#gallery">
+                            <i class="fas fa-images"></i>
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#aboutMe">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#stayUpdated">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section id="aboutMe">
+            <div class="wrapper clearfix">
+                <img src="./assets/image-4@2x.jpg" alt="The owner of Summit smiling in the sun with her blond hair blowing over her face">
 
-=
+                <div class="aboutMeInfo">
+                    <h2>About me</h2>
 
-    <section class="siteMap">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#gallery">
-                        <i class="fas fa-images"></i>
-                        <span>Gallery</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#aboutMe">
-                        <i class="fas fa-user"></i>
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#stayUpdated">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
+                    <button>Find out more</button>
+                </div>
+            </div>
+        </section>
 
-    <section id="aboutMe">
+        <section id="gallery">
+            <img src="./assets/image-5.jpg" alt="A vast expanse of evergreen forest with mountains in the distance">
+            <img src="./assets/image-6.jpg" alt="A snowy mountain peak peaking out of surrounding clouds">
+            <img src="./assets/image-7.jpg" alt="A blue sky above snowy mounains sloping steeply down to a lake">
+        </section>
+
+        <section id="stayUpdated" class="clearfix">
         <div class="wrapper clearfix">
-            <img src="./assets/image-4@2x.jpg" alt="The owner of Summit smiling in the sun with her blond hair blowing over her face">
+            <div>
+                <h4>Stay updated</h4>
+                <p>Subscribe to our newsletter for updates.</p>
+                <input type="email" id="email" placeholder="email address">
+                <button>Subscribe</button>
+            </div>
 
-            <div class="aboutMeInfo">
-                <h2>About me</h2><main></main>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@email.com">info@email.com</a></li>
+                    <li>
+                        <span>123 - 456 - 7890</span>
+                    </li>
+                    <li>
+                        <span>123 some road,</span>
+                    </li>
+                    <li>
+                        <span>Toronto, ON</span>
+                    </li>
+                </ul>
+            </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div>
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="#aboutSummit">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-                <button>Find out more</button>
+            <div>
+                <h4>Recent posts</h4>
+                <ul>
+                    <li>Climbing Tips</li>
+                    <li>Photography Guide</li>
+                    <li>Top Mountains</li>
+                    <li>Everest</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <section id="gallery">
-        <img src="./assets/image-5.jpg" alt="A vast expanse of evergreen forest with mountains in the distance">
-        <img src="./assets/image-6.jpg" alt="A snowy mountain peak peaking out of surrounding clouds">
-        <img src="./assets/image-7.jpg" alt="A blue sky above snowy mounains sloping steeply down to a lake">
-    </section>
+        </section>
 
-    <section id="stayUpdated" class="clearfix">
-        <div>
-            <h4>Stay updated</h4>
-            <span>Subscribe to our newsletter for updates.</span>
-            <input type="email">
-            <button>Subscribe</button>
-        </div>
-
-        <div>
-            <h4>Contact</h4>
-            <ul>
-                <li><a href="mailto:info@email.com">info@email.com</a></li>
-                <li>
-                    <span>123 - 456 - 7890</span>
-                </li>
-                <li>
-                    <span>123 some road,</span>
-                </li>
-                <li>
-                    <span>Toronto, ON</span>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Pages</h4>
-            <ul>
-                <li><a href="#index.html">Home</a></li>
-                <li><a href="#aboutSummit">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Recent posts</h4>
-        </div>
-
-    </section>
+    </main>
 
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>
