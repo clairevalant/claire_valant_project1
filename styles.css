@@ -336,7 +336,7 @@ header .siteNav {
 }
 
 #stayUpdated .wrapper {
-    margin: 100px 5vw;
+    margin: 100px auto;
     width: 90vw;
 }
 
@@ -368,7 +368,6 @@ input {
 
 .rightHalf {
     float: left;
-    min-width:435px;
 }
 
 .form {
@@ -406,7 +405,7 @@ footer p {
 @media only screen and (max-width: 1110px) {
     #stayUpdated .wrapper {
         width:70vw;
-        margin: 100px 15vw;
+        margin: 100px auto;
     }
 
     .form{
@@ -589,6 +588,11 @@ footer p {
     }
 
     /* form */
+    #stayUpdated .wrapper {
+        width: 90vw;
+        margin: 50px auto;
+    }
+
     input {
         width: 100%;
         text-align: center;
@@ -601,7 +605,15 @@ footer p {
     }
 
     .rightHalf {
-        width: 33%;
+        float: none;
+        width: 100%;
+    }
+
+    .third {
+        display: block;
+        width: 100%;
+        margin: 10px;
+        text-align: center;
     }
 }
 
