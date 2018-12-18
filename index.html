@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>SUMMIT</title>
 </head>
@@ -21,7 +21,7 @@
             <span class="logo">Summit</span>
 
             <i class="fas fa-bars"></i>
-            <nav>
+            <nav class="siteNav">
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#aboutSummit">About</a></li>
@@ -157,47 +157,50 @@
 
         <section id="stayUpdated" class="clearfix">
         <div class="wrapper clearfix">
-            <div>
+            <div class="form">
                 <h4>Stay updated</h4>
                 <p>Subscribe to our newsletter for updates.</p>
-                <input type="email" id="email" placeholder="email address">
+                <label for="email" class="visuallyhidden">Email</label>
+                <input type="email" id="email" placeholder="email address" name="email">
                 <button>Subscribe</button>
             </div>
 
-            <div>
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="mailto:info@email.com">info@email.com</a></li>
-                    <li>
-                        <span>123 - 456 - 7890</span>
-                    </li>
-                    <li>
-                        <span>123 some road,</span>
-                    </li>
-                    <li>
-                        <span>Toronto, ON</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Pages</h4>
-                <ul>
-                    <li><a href="#index.html">Home</a></li>
-                    <li><a href="#aboutSummit">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Recent posts</h4>
-                <ul>
-                    <li>Climbing Tips</li>
-                    <li>Photography Guide</li>
-                    <li>Top Mountains</li>
-                    <li>Everest</li>
-                </ul>
+            <div class="rightHalf clearfix">
+                <div class="third">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@email.com">info@email.com</a></li>
+                        <li>
+                            <span>123 - 456 - 7890</span>
+                        </li>
+                        <li>
+                            <span>123 some road,</span>
+                        </li>
+                        <li>
+                            <span>Toronto, ON</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="third">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="#index.html">Home</a></li>
+                        <li><a href="#aboutSummit">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="third">
+                    <h4>Recent posts</h4>
+                    <ul>
+                        <li>Climbing Tips</li>
+                        <li>Photography Guide</li>
+                        <li>Top Mountains</li>
+                        <li>Everest</li>
+                    </ul>
+                </div>
             </div>
         </div>
 

@@ -55,7 +55,7 @@ h2 {
     margin: 0;
 }
 
-header ul {
+ul {
     padding: 0;
     margin: 0;
 }
@@ -74,7 +74,7 @@ h4,
 .siteMap span,
 button,
 header li,
-header .wrapper nav {
+header .wrapper .siteNav {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
@@ -89,7 +89,7 @@ h1 span {
 h1 {
     font-size: 13rem;
     display: block;
-    line-height: 70px; 
+    line-height: 1.6; 
 }
 
 h4 {
@@ -118,7 +118,6 @@ li {
 
 }
 
-
 .mainTitles,
 footer p{
     display: block; 
@@ -136,13 +135,14 @@ footer {
 
 header {
     min-height: 100vh;
+    position: relative;
     background: url('./assets/image-1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header i:first-of-type {
+.fa-bars {
     display: none;
 }
 
@@ -151,15 +151,30 @@ header .wrapper {
     height: 93vh;
     margin: 0 auto;
     padding: 15px 0;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top:2.4rem;
+    left:0;
 }
 
 .mainTitles {
-    margin: 140px auto 0 auto;
+    margin: 23vh auto 0 auto;
 }
 
-header .wrapper nav {
+header .wrapper .siteNav {
     margin: 0;
     padding: 5px 0 0 0;
+}
+
+.siteNav a {
+    transition: color 0.3s;
+}
+
+.siteNav a:hover {
+    color: #8dd7e9;
 }
 
 .links li {
@@ -167,20 +182,26 @@ header .wrapper nav {
     margin: 0 15px;
 }
 
-header nav {
+header .siteNav {
     float: right;
 }
 
 .social {
     display: inline-block;
     font-size: 2rem;
-    position: relative;
-    top: -20vh;
-    right: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 45px;
+    z-index: 30;
 }
 
 .social a {
     color: #094154;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #8dd7e9;
 }
 
 .social li {
@@ -244,6 +265,18 @@ header nav {
     width: 100%;
 }
 
+.siteMap a {
+    transition: color 0.3s;
+}
+
+.siteMap a:hover {
+    color: #8dd7e9;
+}
+
+#siteMap ul {
+    padding: 0;
+}
+
 .siteMap li {
     display: inline-block;
 }
@@ -303,27 +336,13 @@ header nav {
 }
 
 #stayUpdated .wrapper {
-    margin: 100px 10%;
-    width: 80%;
-}
-
-#stayUpdated h4 {
-    margin-bottom: 4px;
+    margin: 100px 5vw;
+    width: 90vw;
 }
 
 #stayUpdated ul {
     margin: 0;
     padding: 0;
-}
-
-#stayUpdated p {
-    margin: 0;
-    padding: 0;
-}
-
-input {
-    width: 400px;
-    height: 50px;
 }
 
 input,
@@ -332,18 +351,40 @@ input,
 }
 
 #stayUpdated button {
-    min-width: 147px;
+    width: 10vw;
+    min-width: 160px;
+    position: relative;
+    top: 2px;
+    left: -5px;
+    height: 50px;
 }
 
-#stayUpdated .wrapper div {
+input {
+    padding-left: 10px;
+    width: 30vw;
+    height: 50px;
+    border: none;
+}
+
+.rightHalf {
     float: left;
-    margin: 0;
-    width: 160px;
+    min-width:435px;
 }
 
-#stayUpdated .wrapper div:first-child {
-    margin-right: 45px;
-    width:auto;
+.form {
+    float: left;
+    /* width: 40vw; */
+    margin-right: 3vw;
+}
+
+.third {
+    float: left;
+    width: 12vw;
+    margin: 0 7.5px;
+}
+
+.third h4 {
+    margin-bottom: 4px;
 }
 
 
@@ -353,6 +394,7 @@ footer {
     width: 100%;
     background: #094154;
     height: 45px;
+    padding-top: 7px;
 }
 
 footer p {
@@ -360,6 +402,33 @@ footer p {
 }
 
 /* 10. Media Queries */
+
+@media only screen and (max-width: 1110px) {
+    #stayUpdated .wrapper {
+        width:70vw;
+        margin: 100px 15vw;
+    }
+
+    .form{
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    input {
+        width: 39vw;
+    }
+
+    .rightHalf {
+        width: 100%;
+    }
+
+    .third {
+        width: calc(100% / 3 - 20px);
+        margin: 0 10px;
+    }
+}
 
 @media only screen and (max-width: 1300px) {
     #gallery img,
@@ -387,6 +456,7 @@ footer p {
     .quadBottom .picCaption,
     .quadTop .picCaption {
         margin: 50px auto;
+        width:90vw;
     }
 }
 
@@ -421,10 +491,6 @@ footer p {
         text-align: center;
         margin: 25px auto;
     }
-
-    .aboutMeInfo button {
-        margin-top: 25px 73px;
-    }
 }
 
 @media only screen and (max-width:720px) {
@@ -436,15 +502,19 @@ footer p {
         position: relative;
     }
 
-    header .wrapper i {
-        display: block;
-        position: absolute;
-        top:1.5rem;
-        right:0;
-        font-size: 3.3rem;
+    .social {
+        display: none;
     }
 
-    header nav {
+    .fa-bars {
+        display: block;
+        position: fixed;
+        top:2.4rem;
+        right:10vw;
+        font-size: 3.1rem;
+    }
+
+    header .siteNav {
         display: none;
     }
 
@@ -471,7 +541,7 @@ footer p {
 
 @media only screen and (max-width: 578px) {
     h1 {
-        font-size: 80px;
+        font-size: 8rem;
     }
 
     h1 span {
@@ -510,6 +580,29 @@ footer p {
         margin: 15px auto;
     }
 
+    #aboutMe {
+        text-align: center;
+    }
+
+    #aboutMe p {
+        text-align: left;
+    }
+
+    /* form */
+    input {
+        width: 100%;
+        text-align: center;
+    }
+
+    #stayUpdated button {
+        top: 0;
+        left:0;
+        width: 100%;
+    }
+
+    .rightHalf {
+        width: 33%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -517,7 +610,14 @@ footer p {
         width: 90vw;
     }
 
-    #aboutMe button {
-        margin: 25px 80px;
+    .quadTop .blogPic,
+    .quadBottom .blogPic {
+        width: auto;
+        height: 170px;
+    }
+
+    h1 {
+        font-size: 6rem;
+        line-height: 1.2;
     }
 }
